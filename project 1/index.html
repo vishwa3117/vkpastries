@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK PASTRIES</title> 
+    <link rel="stylesheet" href="./assets/css/cake.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo"> VK PASTRIES 🎂</h2> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./ourcake.html">Our Cakes</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">Freshly Baked With Love and care</p>
+            <h1>Life Is Better<br>With Cake!</h1>
+            <p>Delicious cakes for birthdays, weddings
+               and every special moment.</p>
+            <a href="ourcake.html" class="btn">Explore Our Cakes</a>
+        </div>
+    </section>
+
+    <!-- Cakes Section -->
+    <section class="cakes" id="cakes">
+        <h2>Our Special Cakes</h2>
+        <p class="subtitle">Made fresh every day with love</p>
+
+        <div class="cake-container">
+
+            <div class="cake-card">
+                <img src="./assets/images/choco img.jpg"
+                     alt="Chocolate birthday cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate with creamy frosting.</p>
+                <h4>₹599</h4>
+                <a href="./contactus.html" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="cake-card">
+                <img src="./assets/images/strawberryimages.jpg"
+                     alt="Strawberry cream dessert">
+                <h3>Strawberry Cake</h3>
+                <p>Sweet strawberry cream delight.</p>
+                <h4>₹699</h4>
+                <a href="./contactus.html" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="cake-card">
+                <img src="./assets/images/red velvet img.jpg"
+                     alt="red velvet cake">
+                <h3>Birthday Cake</h3>
+                <p>Red velvet cake with creamy frosting .</p>
+                <h4>₹899</h4>
+                <a href="./contactus.html" class="order-btn">Order Now</a>
+            </div>
+
+        </div>
+    </section>
+
+   
+
+    <!-- Contact Section -->
+   
+
+<section class="contact" id="contact">
+  <h2>Contact <span>Us</span></h2>
+  <p class="contact-subtitle">
+    Sweet moments start with us! 🎂
+  </p>
+
+  <div class="contact-container">
+    <div class="contact-item">
+      <div class="contact-icon">📍</div>
+      <h3>Our Location</h3>
+      <p>Chennai, Tamil Nadu</p>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">📞</div>
+      <h3>Call Us</h3>
+      <p>+91 99400 98391</p>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">✉️</div>
+      <h3>Email Us</h3>
+      <p>vkpastries@gmail.com</p>
+    </div>
+  </div>
+
+  <a class="contact-btn"
+     href="https://wa.me/919940098391"
+     target="_blank">
+    Chat With Us
+  </a>
+</section>
+
+    
+
+    
+    
+</section>
+<!-- AI Chat Button -->
+<button id="chat-toggle" class="chat-toggle"
+        aria-label="Open cake assistant">
+    💬
+</button>
+
+<!-- Chat Window -->
+<div class="chat-box" id="chat-box">
+    <div class="chat-header">
+        <div>
+            <h3>🎂 Cake AI Assistant</h3>
+            <small>Here to make your day sweeter!</small>
+        </div>
+        <button id="chat-close" aria-label="Close chat">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages">
+        <div class="bot-message">
+            Hi! 👋 Welcome to vk pastries!
+            <br>How can I help you today?
+        </div>
+    </div>
+
+    <div class="quick-questions">
+        <button onclick="quickAsk('Show me cake prices')">
+            Cake prices
+        </button>
+        <button onclick="quickAsk('Suggest a birthday cake')">
+            Birthday cakes
+        </button>
+    </div>
+
+    <form id="chat-form" class="chat-input">
+        <input type="text" id="user-input"
+               placeholder="Ask about our cakes..."
+               autocomplete="off" required>
+        <button type="submit">➤</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>
